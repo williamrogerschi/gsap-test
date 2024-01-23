@@ -205,9 +205,10 @@ span {
 
 .footer {
     padding-top: 10rem;
-    font-size: 3vh;
+    font-size: 2vh;
+    font-weight: 800;
     font-family: 'NightWatch', serif;
-    color: rgb(157, 255, 0);
+    color: #272605;
 }
 
 .text-container {
