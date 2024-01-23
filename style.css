@@ -8,9 +8,18 @@
     font-family: 'NightWatch';
     src: url(./TheNightWatch.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Face';
+    src: url(./NeutralFace.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Kayak-Italic';
+    src: url(./KayakItalic.otf) format('opentype');
+}
 
 html {
     overscroll-behavior: none;
+    min-height: 5200px;
 }
 
 ::-webkit-scrollbar {
@@ -20,21 +29,29 @@ html {
 html, body {
     font-family:'NightWatch', sans-serif;
     height: 100%;
+    background: rgb(212, 192, 165);
     background-image: url('/wb.png');
+    margin: 0;
 }
+
 
 h1 {
     font-size: 80px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -0.02em;
+    padding-left: 2rem;
 }
 
 p {
+    font-family: 'Face', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    width: 50%;
+    width: 75%;
+    padding-left: 1em;
+    text-transform:none;
+    color: #272605;
 }
 
 img {
@@ -48,12 +65,13 @@ img {
     top: 0;
     right: 0;
     margin: 2em;
-    width: 18px;
-    height: 18px;
-    background: red;
+    width: 40px;
+    height: 40px;
+    background: rgb(157, 255, 0);
     border-radius: 100%;
     z-index: 10000;
 }
+
 
 .header {
     position: fixed;
@@ -75,7 +93,7 @@ img {
     flex: 1;
     font-size: 10vw;
     font-weight: 800;
-    color: black;
+    color: #272605;
     text-align: center;
 }
 
@@ -95,23 +113,25 @@ img {
     transform: rotate(30deg);
 }
 
-
 .img-holder img {
     position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(0); 
+    transform: scale(1); 
   }
 
 .content-holder {
     position: relative;
     top: -5px;
     width: 100%;
-    background: rgb(141, 125, 104);
+    background: rgb(212, 192, 165);
     background-image: url('/wb.png');
-    color: #fff;
+    color: rgb(157, 255, 0);
     padding: 1em;
+    height: max-content;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .row {
@@ -119,24 +139,66 @@ img {
 }
 
 .img {
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
+.row .img {
+    position: relative;
+    left: 0%;
+    padding: 2em;
+  }
+
+  .row p {
+    margin: 0;
+  }
+
+
 .row:nth-child(2)  .img {
     position: relative;
-    left: 10%;
+    left: 0%;
+    padding: 2em;
 }
 .row:nth-child(3)  .img {
     position: relative;
-    left: 50%;
+    left: 0%;
+    padding: 2em;
 }
 .row:nth-child(4)  .img {
     position: relative;
-    left: 10%;
+    left: 0%;
+    padding: 2em;
 }
 .row:nth-child(6)  .p {
     position: relative;
-    left: 30%;
-    margin: 4em 0;
+    left: 0%;
+    padding: 2em;
+}
+
+span {
+    padding-left: 1rem;
+}
+
+.footer {
+    padding-top: 10rem;
+    font-size: 3vh;
+    font-family: 'NightWatch', serif;
+    color: rgb(157, 255, 0);
+}
+
+.text-container {
+    display: inline-block;
+    place-content: start;
+    padding-top: 2rem;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 4vh;
+}
+
+.text-p {
+    padding: 1em 0;
+    font-size: 2vh;
+    color: #272605;
 }
