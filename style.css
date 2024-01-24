@@ -6,15 +6,15 @@
 
 @font-face {
     font-family: 'NightWatch';
-    src: url('/assets/TheNightWatch.ttf') format('truetype');
+    src: url('assets/TheNightWatch.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Face';
-    src: url('/assets/NeutralFace.otf') format('opentype');
+    src: url('assets/NeutralFace.otf') format('opentype');
 }
 @font-face {
     font-family: 'Kayak-Italic';
-    src: url('/assets/KayakItalic.otf') format('opentype');
+    src: url('assets/KayakItalic.otf') format('opentype');
 }
 
 html {
