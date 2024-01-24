@@ -64,14 +64,14 @@ img {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 2em;
+    margin: 3rem;
     width: 2rem;
     height: 2rem;
     background: rgb(157, 255, 0);
     border: 1px solid #20200a;
     z-index: 10000;
     border-radius: 50px;
-    padding: 15px 50px;
+    padding: 15px 60px;
     transition: padding .5s ease-in-out;
 }
 
