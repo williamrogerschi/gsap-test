@@ -11,3 +11,8 @@
   status = 200
   force = true
   headers = { Content-Type = "font/truetype" }
+
+  [build]
+  base = "."
+  command = "npm run build"
+  publish = "build" 
