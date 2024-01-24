@@ -171,3 +171,22 @@
   </body>
 
 </html>
+
+<!-- [[redirects]]
+  from = "/*/*.otf"
+  to = "/:splat"
+  status = 200
+  force = true
+  headers = { Content-Type = "font/opentype" }
+
+[[redirects]]
+  from = "/*/*.ttf"
+  to = "/:splat"
+  status = 200
+  force = true
+  headers = { Content-Type = "font/truetype" }
+
+  [build]
+  base = "."
+  publish = "build"  -->
+
