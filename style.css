@@ -6,15 +6,15 @@
 
 @font-face {
     font-family: 'NightWatch';
-    src: url('assets/TheNightWatch.ttf') format('truetype');
+    src: url('/assets/TheNightWatch.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Face';
-    src: url('assets/NeutralFace.otf') format('opentype');
+    src: url('/assets/NeutralFace.otf') format('opentype');
 }
 @font-face {
     font-family: 'Kayak-Italic';
-    src: url('assets/KayakItalic.otf') format('opentype');
+    src: url('/assets/KayakItalic.otf') format('opentype');
 }
 
 html {
@@ -30,7 +30,7 @@ html, body {
     font-family:'NightWatch', sans-serif;
     height: 100%;
     background: rgb(212, 192, 165);
-    background-image: url('/wb.png');
+    background-image: url('/assets/wb.png');
     margin: 0;
 }
 
@@ -151,7 +151,7 @@ img {
     top: -5px;
     width: 100%;
     background: rgb(212, 192, 165);
-    background-image: url('/wb.png');
+    background-image: url('/assets/wb.png');
     color: rgb(157, 255, 0);
     padding: 1em;
     height: max-content;
